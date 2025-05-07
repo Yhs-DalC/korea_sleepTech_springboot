@@ -81,23 +81,23 @@ public class BookService {
 
     public BookResponseDto updateBook(Long id, BookUpdateRequestDto dto) {
         BookResponseDto responseDto = null;
-        System.out.println("ck1");// 작동
+
         try{
             C_Book book = bookRepository.findById(id)
                     .orElseThrow(() -> new IllegalArgumentException("해당 id의 책을 찾을 수 없습니다: " + id));//없는것체크성공
-            System.out.println("ck2");//여기부터 에러
+
 
             book.setContent(dto.getContent());
             book.setCategory(dto.getCategory());
 
             C_Book updatedBook = bookRepository.save(book);
-            System.out.println("ck3");
+
             responseDto = new BookResponseDto(
                     updatedBook.getWriter(),
                     updatedBook.getTitle(),
                     updatedBook.getCategory()
             );
-            System.out.println("ck4");
+
         }catch (Exception e){
             e.printStackTrace();
         }
