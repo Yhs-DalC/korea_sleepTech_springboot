@@ -10,8 +10,6 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class CommentCreateRequestDto {
-    @NotNull(message = "Post ID는 필수 입력 값입니다")
-    private Long postId;
 
     @NotBlank(message = "내용은 필수 입력 값입니다")
     private String content;

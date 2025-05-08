@@ -9,7 +9,7 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class CommentUpdateRequestDto {
-    @NotNull(message = "Post ID는 필수 입력 값입니다")
-    private Long postId;
+    @NotNull(message = "내용은 필수 입력 값입니다")
+    private String content;
 
 }
