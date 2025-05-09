@@ -9,7 +9,6 @@ import lombok.*;
 // 엔티티명 + CRUD(동작) +Request/Response + Dto
 
 @Getter
-@Setter
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
