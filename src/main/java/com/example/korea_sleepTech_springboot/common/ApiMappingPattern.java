@@ -5,7 +5,10 @@ package com.example.korea_sleepTech_springboot.common;
 // - 각 Controller의 고유 경로를 지정
 
 public class ApiMappingPattern {
-    public static final String BOOK_API = "/api/v1/books";
+    public static final String AUTH_API = "/api/v1/auth";
+    public static final String USER_API = "/api/v1/users";
+
+    public static final String BOOK_API = "/api/v1/user/books";
     public static final String POST_API = "/api/v1/posts";
     //public static final String COMMENT_API = "/api/v1/comments";
     
@@ -18,4 +21,5 @@ public class ApiMappingPattern {
     // 2) 댓글 수정(PUT): /api/v1/posts/{postId}/comments/{commentId}
     // 3) 댓글 삭제(DELETE): /api/v1/posts/{postId}/comments/{commentId}
     public static final String COMMENT_API = "/api/v1/posts/{postId}/comments";
+
 }

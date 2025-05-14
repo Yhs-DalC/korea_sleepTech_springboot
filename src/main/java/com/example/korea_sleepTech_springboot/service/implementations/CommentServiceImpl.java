@@ -105,7 +105,7 @@ public class CommentServiceImpl implements CommentService {
                 .orElseThrow(() -> new EntityNotFoundException(ResponseMessage.NOT_EXISTS_COMMENT + commentId));
 
         if(!comment.getPost().getId().equals(postId)){
-            throw new IllegalArgumentException("comment does not belong to the specifide Post");
+            throw new IllegalArgumentException("comment does not belong to the specified Post");
         }
 
         // == 연관 관계를 해제 ==

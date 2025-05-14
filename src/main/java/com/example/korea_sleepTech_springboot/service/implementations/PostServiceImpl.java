@@ -123,7 +123,7 @@ public class PostServiceImpl implements PostService {
     public ResponseDto<Void> deletePost(Long id){
 //        if(!postRepository.existsById(id)){
 //            // .existsById(PK값)
-//            // : 존재하면 truem 존재하지 않으면 false 반환
+//            // : 존재하면 true 존재하지 않으면 false 반환
 //            throw new EntityNotFoundException(ResponseMessage.NOT_EXISTS_POST + id);
 //        }
 
