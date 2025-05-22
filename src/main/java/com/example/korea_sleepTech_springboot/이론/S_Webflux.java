@@ -31,7 +31,7 @@ public class S_Webflux {
 *       : 0개 이상 여러 데이터를 비동기 스트림으로 처리
 *
 * 3) subscribeOn(Schedulers.boundedElastic())
-*       : 블로킹 작업(IO, DB)을 백그다룬드 쓰레드에서 처리
+*       : 블로킹 작업(IO, DB)을 백그라운드 쓰레드에서 처리
 * 
 * 4) onErrorResume
 *       : 에러가 발생하면 대체 동작 수행
