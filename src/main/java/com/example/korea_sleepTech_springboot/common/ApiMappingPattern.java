@@ -5,6 +5,8 @@ package com.example.korea_sleepTech_springboot.common;
 // - 각 Controller의 고유 경로를 지정
 
 public class ApiMappingPattern {
+    public static final String ORDER_API = "/api/v1/orders";
+
     public static final String AUTH_API = "/api/v1/auth";
     public static final String USER_API = "/api/v1/users";
     public static final String ADMIN_API = "/api/v1/admin";
